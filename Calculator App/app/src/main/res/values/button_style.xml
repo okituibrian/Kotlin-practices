@@ -1,0 +1,20 @@
+<resources>
+    <style name="CalcButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="CalcButtonOperator" parent="CalcButton">
+        <item name="android:backgroundTint">@color/green</item>
+    </style>
+
+    <style name="CalcButtonEquals" parent="CalcButton">
+        <item name="android:backgroundTint">@color/green</item>
+    </style>
+
+    <style name="CalcButtonClear" parent="CalcButton">
+        <item name="android:backgroundTint">@color/green</item>
+    </style>
+</resources>
