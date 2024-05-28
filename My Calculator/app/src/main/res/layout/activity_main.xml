@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Okitui's Simple calculator"
+        android:textSize="30dp"
+        android:background="@color/green"
+        tools:ignore="MissingConstraints"
+        android:textAlignment="center">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="16dp"
+        android:layout_marginTop="100dp"
+        android:text="0"
+        android:textSize="32sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="150dp"
+        android:columnCount="4"
+        android:rowCount="5"
+        app:layout_constraintTop_toBottomOf="@id/display"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Row 1 -->
+        <Button
+            android:text="C"
+            android:onClick="onOperator"
+            style="@style/CalcButtonOperator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill" />
+
+        <Button
+            android:text="÷"
+            android:onClick="onOperator"
+            style="@style/CalcButtonOperator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill" />
+
+        <Button
+            android:text="x"
+            android:onClick="onOperator"
+            style="@style/CalcButtonOperator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill" />
+
+        <Button
+            android:text="CLR"
+            android:onClick="onClear"
+            style="@style/CalcButtonClear"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill" />
+
+        <!-- Row 2 -->
+        <Button
+            android:text="7"
+            android:onClick="onDigit"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill" />
+
+        <Button
+            android:text="8"
+            android:onClick="onDigit"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill" />
+
+        <Button
+            android:text="9"
+            android:onClick="onDigit"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill" />
+
+        <Button
+            android:text="-"
+            android:onClick="onOperator"
+            style="@style/CalcButtonOperator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill" />
+
+        <!-- Row 3 -->
+        <Button
+            android:text="4"
+            android:onClick="onDigit"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill" />
+
+        <Button
+            android:text="5"
+            android:onClick="onDigit"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill" />
+
+        <Button
+            android:text="6"
+            android:onClick="onDigit"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill" />
+
+        <Button
+            android:text="+"
+            android:onClick="onOperator"
+            style="@style/CalcButtonOperator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            />
+
+        <!-- Row 4 -->
+        <Button
+            android:text="1"
+            android:onClick="onDigit"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill" />
+
+        <Button
+            android:text="2"
+            android:onClick="onDigit"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill" />
+
+        <Button
+            android:text="3"
+            android:onClick="onDigit"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill" />
+
+        <Button
+            android:text="="
+            android:onClick="onEqual"
+            style="@style/CalcButtonOperator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:layout_rowSpan="2" />
+
+
+        <!-- Row 5 -->
+        <Button
+            android:text="%"
+            android:onClick="onDigit"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill" />
+
+        <Button
+            android:text="0"
+            android:onClick="onDigit"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill" />
+
+        <Button
+            android:text="."
+            android:onClick="onDecimalPoint"
+            style="@style/CalcButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill" />
+
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
