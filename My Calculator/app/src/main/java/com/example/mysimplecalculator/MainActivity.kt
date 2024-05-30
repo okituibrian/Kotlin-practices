@@ -30,6 +30,16 @@ class MainActivity : AppCompatActivity() {
 
 
     fun onClear(view: View) {
+        if (display.text.isNotEmpty()) {
+            display.text = display.text.substring(0, display.text.length - 1)
+            val newText = display.text.toString()
+            lastNumeric = newText.isNotEmpty() && newText.last().isDigit()
+            lastDot = newText.contains('.')
+        }
+    }
+
+
+    fun allClear(view: View) {
         display.text = "0"
         lastNumeric = false
         lastDot = false

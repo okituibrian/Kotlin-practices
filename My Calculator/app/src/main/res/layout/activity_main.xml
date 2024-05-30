@@ -45,8 +45,8 @@
 
         <!-- Row 1 -->
         <Button
-            android:text="C"
-            android:onClick="onOperator"
+            android:text="AC"
+            android:onClick="allClear"
             style="@style/CalcButtonOperator"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -75,7 +75,7 @@
             android:layout_gravity="fill" />
 
         <Button
-            android:text="CLR"
+            android:text="DEL"
             android:onClick="onClear"
             style="@style/CalcButtonClear"
             android:layout_width="0dp"
