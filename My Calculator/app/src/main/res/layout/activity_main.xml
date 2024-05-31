@@ -45,8 +45,13 @@
 
         <!-- Row 1 -->
         <Button
+<<<<<<< HEAD
             android:text="AC"
             android:onClick="allClear"
+=======
+            android:text="C"
+            android:onClick="onOperator"
+>>>>>>> ef4c602 ( updated the up of the calculator to accept appended results and modifed the functionality of * and / operators)
             style="@style/CalcButtonOperator"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -75,7 +80,11 @@
             android:layout_gravity="fill" />
 
         <Button
+<<<<<<< HEAD
             android:text="DEL"
+=======
+            android:text="CLR"
+>>>>>>> ef4c602 ( updated the up of the calculator to accept appended results and modifed the functionality of * and / operators)
             android:onClick="onClear"
             style="@style/CalcButtonClear"
             android:layout_width="0dp"
