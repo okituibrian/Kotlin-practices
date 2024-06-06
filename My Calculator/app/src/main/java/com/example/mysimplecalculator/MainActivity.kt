@@ -40,13 +40,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
     fun allClear(view: View) {
 
-display.text = "0"
+        display.text = "0"
 
         display.text = "0"
-  lastNumeric = false
+        lastNumeric = false
         lastDot = false
     }
 
